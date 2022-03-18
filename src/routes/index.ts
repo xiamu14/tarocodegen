@@ -63,7 +63,7 @@ export default function generateRoutes() {
 	rd.eachSync(routesPath, (fileDir, stats) => {
 		// 每找到一个文件都会调用一次此函数
 		// 参数s是通过 fs.stat() 获取到的文件属性值
-		fileDir = fileDir.split(path.sep).join("/");
+		// fileDir = fileDir.split(path.sep).join("/");
 		const isFile = stats.isFile(); //是文件
 		const routeType = isRouter(fileDir);
 		if (isFile && routeType) {

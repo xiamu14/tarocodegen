@@ -18,7 +18,7 @@
 		"url": "https://github.com/yocdev/tarocodegen/issues"
 	},
 	"scripts": {
-		"dev": "cross-env NODE_ENV=\"dev\" gulp && dist/cli.js",
+		"dev": "cross-env NODE_ENV=\"dev\" gulp && node dist/cli.js",
 		"build": "cross-env NODE_ENV=\"prod\" gulp",
 		"test": "xo && ava",
 		"tarocodegen": "tarocodegen"
